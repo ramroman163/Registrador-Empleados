@@ -1,0 +1,164 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  padding: 2rem 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  background: #ad343e;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+header > img{
+    max-height: 75px;
+}
+
+body {
+  background: #2f4550;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  margin: 0 auto;
+  width: 80%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+
+tbody {
+  width: 100%;
+  overflow: hidden;
+}
+
+th {
+  padding: 0.5rem;
+  background: #474747;
+  color: white;
+}
+
+tr {
+  width: 100%;
+}
+
+td {
+  width: 30vw;
+  padding: 0.5rem;
+  background: #e0e0ce;
+}
+
+footer{
+    width: 100%;
+    min-height: 10vh;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: white;
+    background: #ad343e;
+}
+
+.logout{
+    text-decoration: none;
+    margin: 1rem 0;
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.logout > button{
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: .5rem .7rem;
+    color: white;
+    background: rgb(13, 110, 253);
+    outline: none;
+    border: 1px solid rgb(13, 110, 253);
+    border-radius: .2rem;
+}
+
+.download{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: .5rem .7rem;
+    color: white;
+    background: rgb(25, 135, 84);
+    outline: none;
+    border: 1px solid rgb(25, 135, 84);
+    border-radius: .2rem;
+}
+
+.download > i{
+    margin-right: 0.2rem;
+}
+
+.download:hover{
+    cursor:pointer;
+    background: rgba(25, 135, 84, 0.4);
+}
+
+a > button > i{
+    margin-right: .2rem;
+}
+
+.logout > button:hover{
+    cursor:pointer;
+    background: rgba(13, 110, 253, 0.4);
+}
+
+.download > button:hover{
+   cursor:pointer;
+    background: rgba(25, 135, 84, 0.4); 
+}
+
+h2{
+    margin: 1rem 1rem;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 1000px){
+    table{
+        width: 95%;
+        box-shadow: none;
+    }
+    
+    td{
+        max-width: 30vw;
+        flex-grow: 1;
+        overflow: hidden;
+    }
+    
+    tbody{
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 1500px){
+    body{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 2000px){
+    body{
+        font-size: 30px;
+    }
+}
